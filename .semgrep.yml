@@ -1,0 +1,12 @@
+rules:
+- id: equality_check
+  languages: [python]
+  patterns:
+    - pattern-either: 
+      - pattern: |
+          $X == $Y
+  message: |
+    Equality check
+  severity: WARNING
+  metadata:
+    dev.semgrep.actions: none
